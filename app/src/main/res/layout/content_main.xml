@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0e1b23"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mohammed.makanlah.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MAKANlah!"
+    android:textSize="40sp"
+    android:layout_centerHorizontal="true"
+    android:textColor="#FFFFFF"
+    android:id="@+id/Title"
+    />
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Title"
+        android:id="@id/Title"
+        android:layout_alignParentTop="true"
+        />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/button_corner"
+        android:onClick="pick_restaurant"
+        android:text="First Button"
+        android:id="@+id/first_button"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/button_corner"
+        android:layout_alignParentEnd="true"
+        android:onClick="pick_restaurant"
+        android:text="second Button"
+        android:id="@+id/second_button"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_button"
+        android:layout_marginTop="150sp"
+        android:background="@drawable/button_corner"
+        android:onClick="pick_restaurant"
+        android:text="third Button"
+        android:id="@+id/third_button"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_button"
+        android:layout_marginTop="150sp"
+        android:background="@drawable/button_corner"
+        android:layout_alignParentEnd="true"
+        android:onClick="pick_restaurant"
+        android:text="fourth Button"
+        android:id="@+id/fourth_button"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/logo"
+        />
+</RelativeLayout>

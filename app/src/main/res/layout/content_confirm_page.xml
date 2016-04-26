@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0e1b23"
+    tools:context="com.example.mohammed.makanlah.confirm_page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAKANlah!"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:id="@+id/Title"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:text="Your Order:"
+        android:textSize="30sp"
+        android:layout_marginTop="30sp"
+        android:textColor="#FF0000"
+        android:id="@+id/your_order"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/your_order"
+        android:text="Name:"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30sp"
+        android:id="@+id/name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:text="ID:"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="50sp"
+        android:id="@+id/id"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/your_order"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35sp"
+        android:layout_marginRight="60sp"
+        android:background="@drawable/textfield"
+        android:ems="8"
+        android:id="@+id/username"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6sp"
+        android:layout_marginRight="60sp"
+        android:background="@drawable/textfield"
+        android:ems="8"
+        android:id="@+id/userid"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_corner"
+        android:text="Order"
+        android:onClick="confirm_order"
+        />2
+
+
+</RelativeLayout>
